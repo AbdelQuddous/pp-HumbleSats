@@ -6,6 +6,10 @@
     <meta name="description" content="Privacy Policy for HumbleSats — a private, Bitcoin-only stack tracker. No account, no ads, no behavioral tracking. Your stack is stored locally.">
     <meta name="robots" content="index, follow">
     <title>Privacy Policy — HumbleSats</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta property="og:title" content="HumbleSats Privacy Policy">
+    <meta property="og:description" content="Private Bitcoin stack tracker. No account, no ads, no analytics. Your stack stays on your device.">
+    <meta property="og:image" content="https://abdelquddous.github.io/pp-HumbleSats/icon.png">
     <style>
         :root {
             --bg: #0f1117;
@@ -126,6 +130,30 @@
             padding: 1.5rem;
             margin-top: 2rem;
         }
+        .site-nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 1rem 1.25rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem 1.25rem;
+            font-size: 0.9rem;
+        }
+        .site-nav .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text);
+            font-weight: 600;
+        }
+        .site-nav .nav-brand img { width: 28px; height: 28px; border-radius: 7px; }
+        .site-nav .nav-links { display: flex; flex-wrap: wrap; gap: 0.25rem 1.1rem; }
+        .site-nav .nav-links a { color: var(--text-dim); }
+        .site-nav .nav-links a[aria-current="page"] { color: var(--text); }
+        .site-nav .nav-links a.cta { color: var(--accent); font-weight: 600; }
+        footer a { color: var(--text-dim); text-decoration: underline; }
         @media (max-width: 600px) {
             body { font-size: 15px; }
             .container { padding: 1rem 1rem 3rem; }
@@ -136,11 +164,21 @@
 </head>
 <body>
 
+<nav class="site-nav" aria-label="Site">
+    <a class="nav-brand" href="./"><img src="icon.png" alt="" width="28" height="28">HumbleSats</a>
+    <div class="nav-links">
+        <a href="./" aria-current="page">Privacy</a>
+        <a href="terms/">Terms</a>
+        <a href="support/">Support</a>
+        <a class="cta" href="https://play.google.com/store/apps/details?id=com.abdelquddos.humblesats">Get it on Google Play</a>
+    </div>
+</nav>
+
 <header>
     <div class="brand">HumbleSats</div>
     <div class="tagline">Stay humble. Track every sat.</div>
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: August 28, 2026</div>
+    <div class="updated">Last updated: October 20, 2026</div>
 </header>
 
 <div class="container">
@@ -278,7 +316,7 @@
 
 <h2>9. Children's Privacy</h2>
 <p>
-    HumbleSats is not directed at children under 13. We do not knowingly collect any data from children. The app is rated 4+ on the App Store and "Everyone" on Google Play.
+    HumbleSats is not directed at children under 13. We do not knowingly collect any data from children. The app is rated "Everyone" on Google Play.
 </p>
 
 <h2>10. Your Rights</h2>
@@ -294,9 +332,9 @@
     We may update this Privacy Policy from time to time. If we make material changes, we will update the "Last updated" date at the top of this page and, if appropriate, notify you within the app. We will never add analytics, behavioral tracking, or data collection to HumbleSats without updating this policy and notifying users.
 </p>
 
-<h2>12. Open Source</h2>
+<h2>12. Verifying These Claims</h2>
 <p>
-    HumbleSats's data handling practices described in this policy can be verified by reviewing the app's source code. The network connections and local storage behavior are implemented exactly as described here. There are no hidden SDKs, no obfuscated tracking calls, and no background data collection.
+    The network connections and local storage behavior are implemented exactly as described here. There are no hidden SDKs, no obfuscated tracking calls, and no background data collection. The app's source code is not public at this time, but you can confirm its behavior with any network monitor: HumbleSats only connects to the price providers and the platform store listed in Section 3.
 </p>
 
 <div class="contact">
@@ -305,8 +343,8 @@
         If you have questions about this Privacy Policy or HumbleSats's data practices, you can contact us at:
     </p>
     <ul>
-        <li>Email: <a href="mailto:support@humblesats.app">support@humblesats.app</a></li>
-        <li>Website: <a href="https://humblesats.app">humblesats.app</a></li>
+        <li>Email: <a href="mailto:abdquddos@gmail.com">abdquddos@gmail.com</a></li>
+        <li>Help and purchase questions: <a href="support/">Support</a></li>
     </ul>
 </div>
 
@@ -315,6 +353,7 @@
 <footer>
     <p>HumbleSats &mdash; Stay humble. Track every sat.</p>
     <p>&copy; 2026 HumbleSats. Private by design. No account. No ads. No behavioral tracking.</p>
+    <p><a href="./">Privacy</a> &middot; <a href="terms/">Terms</a> &middot; <a href="support/">Support</a></p>
 </footer>
 
 </body>
