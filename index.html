@@ -178,7 +178,7 @@
     <div class="brand">HumbleSats</div>
     <div class="tagline">Stay humble. Track every sat.</div>
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: October 20, 2026</div>
+    <div class="updated">Last updated: October 24, 2026</div>
 </header>
 
 <div class="container">
@@ -246,8 +246,8 @@
     </thead>
     <tbody>
         <tr>
-            <td>Bitcoin price providers (CoinGecko, Coinbase, and Blockchain.com)</td>
-            <td>Fetch current BTC price for display and calculations</td>
+            <td>Bitcoin price providers (mempool.space, CoinGecko, Coinbase, and Blockchain.com)</td>
+            <td>Fetch the current BTC price and the latest block height for display and calculations</td>
             <td>No portfolio data, account data, or app-generated identifier. As with any HTTPS request, the provider can receive standard network metadata such as an IP address.</td>
             <td class="yes">Yes (core feature)</td>
         </tr>
@@ -281,7 +281,7 @@
 
 <h3>Bitcoin Price API</h3>
 <p>
-    HumbleSats fetches the current Bitcoin price from public price providers. The request contains no portfolio data, account data, or app-generated identifier. Like any HTTPS request, a provider can receive standard network metadata such as an IP address.
+    HumbleSats fetches the current Bitcoin price and the latest block height from public providers (mempool.space first, with CoinGecko, Coinbase, and Blockchain.com as fallbacks). The request contains no portfolio data, account data, or app-generated identifier. Like any HTTPS request, a provider can receive standard network metadata such as an IP address.
 </p>
 
 <h2>6. Data Security</h2>
@@ -292,7 +292,7 @@
     <strong>Backups are excluded.</strong> On Android, the app sets <code>android:allowBackup="false"</code> and configures data extraction rules to exclude all app data from cloud backup and device-to-device transfer. On iOS, the local database is explicitly marked as excluded from iCloud and computer backups.
 </p>
 <p>
-    HumbleSats Pro includes a biometric lock feature that requires Face ID, Touch ID, or your device PIN/passcode to open the app. This is an additional layer of protection on top of your device's existing lock screen.
+    HumbleSats includes an optional biometric lock, free for everyone, that requires your fingerprint, face unlock, or device PIN to open the app. This is an additional layer of protection on top of your device's existing lock screen.
 </p>
 <p>
     All network connections use HTTPS (TLS encryption).
@@ -308,10 +308,13 @@
 
 <h2>8. Export and Backup</h2>
 <p>
-    You can export your data to JSON (full backup) or CSV (spreadsheet) format at any time via <strong>Settings &rarr; Export data</strong>. The exported file is saved to your device's file system. You are responsible for where you store or share this file.
+    You can export your data as a password-encrypted backup (AES-256-GCM), as plain JSON (full backup), or as CSV (spreadsheet) at any time via <strong>Settings &rarr; Export data</strong>. The encryption password never leaves your device and cannot be recovered. The exported file is saved to your device's file system. You are responsible for where you store or share this file.
 </p>
 <p>
     You can restore from a JSON export file via <strong>Settings &rarr; Restore from export</strong>. This replaces all data on the device with the contents of the file.
+</p>
+<p>
+    You can also import purchase history from a CSV file you choose (for example an export from Kraken, Coinbase, or River) via <strong>Settings &rarr; Import history</strong>. The file is read on your device only and is never uploaded.
 </p>
 
 <h2>9. Children's Privacy</h2>
